@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://brlofjhfwm1bl"]
+
+[ext_resource type="PackedScene" uid="uid://djod84ikq4cmh" path="res://Entities/D.A.L/DAL.tscn" id="1_otqq4"]
+[ext_resource type="PackedScene" uid="uid://dqtdejrr2xp22" path="res://Entities/Player/player.tscn" id="1_usfh0"]
+[ext_resource type="PackedScene" uid="uid://ddm08rabwi3kn" path="res://Scenes/Maps/Map01.tscn" id="2_pjgb6"]
+
+[node name="World 1" type="Node2D"]
+
+[node name="Map01" parent="." instance=ExtResource("2_pjgb6")]
+
+[node name="DAL" parent="." instance=ExtResource("1_otqq4")]
+position = Vector2(119, -583)
+
+[node name="Player" parent="." instance=ExtResource("1_usfh0")]
+position = Vector2(82, -594)
+collision_layer = 16
