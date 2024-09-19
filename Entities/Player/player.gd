@@ -7,6 +7,7 @@ var direction: Vector2 = Vector2.ZERO
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var sprite: Sprite2D = $Sprite2D
 @onready var state_manager: PlayerStateManager = $"State Machine"
+@onready var interact_dir: Marker2D = $Direction
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -19,7 +20,7 @@ func _process(_delta):
 		Input.get_axis("left","right"),
 		Input.get_axis("up","down")
 	).normalized()
-
+	
 func _physics_process(_delta):
 	move_and_slide()
 
@@ -38,6 +39,7 @@ func SetDirection() -> bool:
 	
 	AniDirction = new_dir
 	sprite.scale.x = -1 if AniDirction == Vector2.LEFT else 1
+	interact_dir.rotation = 90 if AniDirction == Vector2.LEFT else -90
 	return true
 
 func UpdateAnimation( state : String) -> void:

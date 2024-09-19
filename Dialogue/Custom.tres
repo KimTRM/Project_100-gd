@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=3 format=3 uid="uid://cm43c8kfgylh"]
+
+[ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="1_it5ob"]
+[ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style.gd" id="2_auj7n"]
+
+[resource]
+script = ExtResource("2_auj7n")
+name = "Custom"
+base_overrides = {}
+layers = Array[ExtResource("1_it5ob")]([])
+metadata/_latest_layer = -1

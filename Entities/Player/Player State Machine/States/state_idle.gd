@@ -1,7 +1,7 @@
 class_name State_Idle extends State
 
-@onready var walk : State = $"../Walk"
-
+@onready var walk: State = $"../Walk"
+@onready var interactable_finder: Area2D = $"../../Direction/InteractableFinder"
 # Enters State
 func Enter() -> void:
 	player.UpdateAnimation("idle")
@@ -20,5 +20,8 @@ func Phisics(_delta: float) -> State:
 	return null
 	
 func HandleInput(_event: InputEvent) -> State:
+	if Input.is_action_just_pressed("interact"):
+		var interactable = interactable_finder.get_overlapping_areas()
+		if interactable.size() > 0:
+			interactable[0].action()
 	return null
-	

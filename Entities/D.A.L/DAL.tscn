@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://djod84ikq4cmh"]
+[gd_scene load_steps=14 format=3 uid="uid://djod84ikq4cmh"]
 
 [ext_resource type="Script" path="res://Entities/D.A.L/dal.gd" id="1_16565"]
 [ext_resource type="Texture2D" uid="uid://xmir31kqsa40" path="res://Entities/D.A.L/resources/D.A.L..png" id="1_aodcm"]
 [ext_resource type="Script" path="res://Entities/D.A.L/State Machine/States/idle.gd" id="2_3xm0i"]
 [ext_resource type="Script" path="res://Entities/D.A.L/State Machine/state_machine.gd" id="2_jebcr"]
 [ext_resource type="Script" path="res://Entities/D.A.L/State Machine/States/walk.gd" id="3_dyhmf"]
+[ext_resource type="PackedScene" uid="uid://bics5sxc5k57k" path="res://Scenes/interactable.tscn" id="6_y4co8"]
 
 [sub_resource type="Animation" id="Animation_qvksb"]
 length = 0.72
@@ -130,6 +131,8 @@ _data = {
 radius = 11.0
 height = 36.0
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_o2p8c"]
+
 [node name="DAL" type="CharacterBody2D"]
 z_index = 1
 y_sort_enabled = true
@@ -182,3 +185,10 @@ script = ExtResource("2_3xm0i")
 [node name="Walk" type="Node" parent="State Machine"]
 script = ExtResource("3_dyhmf")
 move_speed = 250.0
+
+[node name="Interactable" parent="." instance=ExtResource("6_y4co8")]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
+position = Vector2(1, 10)
+shape = SubResource("CircleShape2D_o2p8c")
