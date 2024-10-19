@@ -1,7 +1,8 @@
-class_name State_Idle extends State
+class_name StateIdle extends State
 
 @onready var walk: State = $"../Walk"
 @onready var interactable_finder: Area2D = $"../../Direction/InteractableFinder"
+
 # Enters State
 func Enter() -> void:
 	player.UpdateAnimation("idle")

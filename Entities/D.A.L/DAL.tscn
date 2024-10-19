@@ -128,13 +128,12 @@ _data = {
 }
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_w47u3"]
-radius = 11.0
-height = 36.0
+radius = 8.0
+height = 22.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_o2p8c"]
 
 [node name="DAL" type="CharacterBody2D"]
-z_index = 1
 y_sort_enabled = true
 collision_layer = 32
 collision_mask = 17
@@ -170,10 +169,10 @@ metadata/_aseprite_wizard_source_file_hash_ = "93c7bf706a0430dddaeef04cd773ac0d"
 libraries = {
 "": SubResource("AnimationLibrary_p6jfc")
 }
+autoplay = "idle_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2(1, 0)
+position = Vector2(1, 7)
 shape = SubResource("CapsuleShape2D_w47u3")
 
 [node name="State Machine" type="Node" parent="."]
