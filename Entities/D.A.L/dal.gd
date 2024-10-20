@@ -28,6 +28,7 @@ func SetDirection() -> bool:
 	if direction == Vector2.ZERO:
 		return false
 	
+	
 	if direction.y == 0:
 		new_dir = Vector2.LEFT if direction.x < 0 else Vector2.RIGHT
 	elif direction.x == 0:

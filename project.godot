@@ -24,6 +24,12 @@ config/icon="res://resource/KLTL Logo.png"
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 
+[debug]
+
+multirun/number_of_windows=2
+multirun/add_custom_args=true
+multirun/window_args=["listen", "join"]
+
 [dialogic]
 
 directories/dch_directory={}
@@ -45,7 +51,7 @@ version_control/autoload_on_startup=true
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/AsepriteWizard/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg")
+enabled=PackedStringArray("res://addons/AsepriteWizard/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg", "res://addons/godot-sqlite/plugin.cfg")
 
 [input]
 
