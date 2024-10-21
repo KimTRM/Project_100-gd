@@ -1,10 +1,10 @@
 [gd_scene load_steps=14 format=3 uid="uid://djod84ikq4cmh"]
 
-[ext_resource type="Script" path="res://Entities/D.A.L/dal.gd" id="1_16565"]
-[ext_resource type="Texture2D" uid="uid://xmir31kqsa40" path="res://Entities/D.A.L/resources/D.A.L..png" id="1_aodcm"]
-[ext_resource type="Script" path="res://Entities/D.A.L/State Machine/States/idle.gd" id="2_3xm0i"]
-[ext_resource type="Script" path="res://Entities/D.A.L/State Machine/state_machine.gd" id="2_jebcr"]
-[ext_resource type="Script" path="res://Entities/D.A.L/State Machine/States/walk.gd" id="3_dyhmf"]
+[ext_resource type="Script" path="res://Scripts/Entities/DAL/dal.gd" id="1_16565"]
+[ext_resource type="Texture2D" uid="uid://xmir31kqsa40" path="res://Assets/Art/Entities/DAL/D.A.L..png" id="1_aodcm"]
+[ext_resource type="Script" path="res://Scripts/Entities/DAL/State Machine/States/idle.gd" id="2_3xm0i"]
+[ext_resource type="Script" path="res://Scripts/Entities/DAL/State Machine/state_machine.gd" id="2_jebcr"]
+[ext_resource type="Script" path="res://Scripts/Entities/DAL/State Machine/States/walk.gd" id="3_dyhmf"]
 [ext_resource type="PackedScene" uid="uid://bics5sxc5k57k" path="res://Scenes/interactable.tscn" id="6_y4co8"]
 
 [sub_resource type="Animation" id="Animation_qvksb"]
@@ -156,7 +156,7 @@ metadata/_aseprite_wizard_config_ = {
 "only_visible": true,
 "player": "AnimationPlayer",
 "slice": "",
-"source": "res://Entities/D.A.L/resources/D.A.L..aseprite"
+"source": "res://Assets/Art/Entities/DAL/D.A.L..aseprite"
 }
 metadata/_aseprite_wizard_interface_config_ = {
 "animation_section": false,

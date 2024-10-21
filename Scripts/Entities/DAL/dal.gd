@@ -1,4 +1,4 @@
-@icon("res://Entities/D.A.L/resources/DAL.png")
+@icon("res://Assets/Art/Entities/DAL/DAL.png")
 class_name DAL extends CharacterBody2D
 
 var AniDirction: Vector2 = Vector2.DOWN

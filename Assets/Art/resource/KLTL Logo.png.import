@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhyoaqqvpqgnn"
-path="res://.godot/imported/Character-Male.png-e044e5ec17f58062a35a7632c8df68c4.ctex"
+uid="uid://cr3two5ciupuc"
+path="res://.godot/imported/KLTL Logo.png-c46af4be1a9cf169a640ee2926132d0f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entities/Player/Character-Male.png"
-dest_files=["res://.godot/imported/Character-Male.png-e044e5ec17f58062a35a7632c8df68c4.ctex"]
+source_file="res://Assets/Art/resource/KLTL Logo.png"
+dest_files=["res://.godot/imported/KLTL Logo.png-c46af4be1a9cf169a640ee2926132d0f.ctex"]
 
 [params]
 

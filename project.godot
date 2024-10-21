@@ -17,8 +17,9 @@ warnings/check_invalid_track_paths=false
 config/name="PROJECT 100"
 run/main_scene="res://Scenes/Maps/world_1.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
-boot_splash/image="res://resource/KLTL.png"
-config/icon="res://resource/KLTL Logo.png"
+boot_splash/bg_color=Color(0.0470588, 0.0470588, 0.0470588, 1)
+boot_splash/image="res://Assets/Art/resource/KLTL.png"
+config/icon="res://Assets/Art/resource/KLTL Logo.png"
 
 [autoload]
 
@@ -26,7 +27,6 @@ DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 
 [debug]
 
-multirun/number_of_windows=2
 multirun/add_custom_args=true
 multirun/window_args=["listen", "join"]
 
@@ -43,15 +43,20 @@ glossary/default_case_sensitive=true
 window/size/viewport_width=1280
 window/size/viewport_height=720
 window/size/always_on_top=true
-
-[editor]
-
-version_control/plugin_name="GitPlugin"
-version_control/autoload_on_startup=true
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
 
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/AsepriteWizard/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg", "res://addons/godot-sqlite/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://Assets/": "blue",
+"res://Scenes/": "yellow",
+"res://Scripts/": "teal"
+}
 
 [input]
 

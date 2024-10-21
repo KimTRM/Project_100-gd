@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xmir31kqsa40"
-path="res://.godot/imported/D.A.L..png-17b4e53b943c61b325aa10243945567d.ctex"
+uid="uid://8bxb13tjueg2"
+path="res://.godot/imported/KLTL.png-43540882bb4011a59ef5575cc9369ef9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entities/D.A.L/resources/D.A.L..png"
-dest_files=["res://.godot/imported/D.A.L..png-17b4e53b943c61b325aa10243945567d.ctex"]
+source_file="res://Assets/Art/resource/KLTL.png"
+dest_files=["res://.godot/imported/KLTL.png-43540882bb4011a59ef5575cc9369ef9.ctex"]
 
 [params]
 

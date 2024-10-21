@@ -1,10 +1,10 @@
 [gd_scene load_steps=16 format=3 uid="uid://dqtdejrr2xp22"]
 
-[ext_resource type="Script" path="res://Entities/Player/player.gd" id="1_lurnr"]
-[ext_resource type="Texture2D" uid="uid://dq8qygtla63i2" path="res://Entities/Player/resource/Character-Male.png" id="1_swwjx"]
-[ext_resource type="Script" path="res://Entities/Player/Player State Machine/player_state_manager.gd" id="2_32qhn"]
-[ext_resource type="Script" path="res://Entities/Player/Player State Machine/States/state_idle.gd" id="3_h61ux"]
-[ext_resource type="Script" path="res://Entities/Player/Player State Machine/States/state_walk.gd" id="4_asyqu"]
+[ext_resource type="Script" path="res://Scripts/Entities/Player/player.gd" id="1_lurnr"]
+[ext_resource type="Texture2D" uid="uid://dq8qygtla63i2" path="res://Assets/Art/Entities/Player/Character-Male.png" id="1_swwjx"]
+[ext_resource type="Script" path="res://Scripts/Entities/Player/Player State Machine/player_state_manager.gd" id="2_32qhn"]
+[ext_resource type="Script" path="res://Scripts/Entities/Player/Player State Machine/States/state_idle.gd" id="3_h61ux"]
+[ext_resource type="Script" path="res://Scripts/Entities/Player/Player State Machine/States/state_walk.gd" id="4_asyqu"]
 
 [sub_resource type="Animation" id="Animation_ob2wm"]
 length = 0.001
@@ -252,7 +252,7 @@ metadata/_aseprite_wizard_config_ = {
 "only_visible": true,
 "player": "AnimationPlayer",
 "slice": "",
-"source": "res://Entities/Player/resource/Character-Male.aseprite"
+"source": "res://Assets/Art/Entities/Player/Character-Male.aseprite"
 }
 metadata/_aseprite_wizard_source_file_hash_ = "2d42be4917efca91634983ebc0fe847d"
 metadata/_aseprite_wizard_interface_config_ = {
